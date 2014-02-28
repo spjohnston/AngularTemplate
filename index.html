@@ -38,18 +38,28 @@
 <script src="scripts/angular-animate.js"></script>
 <script src="scripts/angular-route.js"></script>
 <script src="scripts/angular-sanitize.js"></script>
-<script src="scripts/moment.js"></script>
+<script src="scripts/moment.js"></script>  <div>
+  <div data-ng-include="'app/layout/shell.html'"></div>
+  <div id="splash-page" data-ng-show="false">
+    <div class="page-splash">
+      <div class="page-splash-message">
+        Angular Template
+      </div>
+      <div class="progress progress-striped active page-progress-bar">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Bootstrapping -->
 <script src="app/app.js"></script>
 <script src="app/config.js"></script>
-<script src="app/config.exceptionHandler.js"></script>
 <script src="app/config.route.js"></script>
 
 <!-- Common Modules -->
 <script src="app/common/common.js"></script>
 <script src="app/common/logger.js"></script>
-<script src="app/common/spinner.js"></script>
 
 <!-- common.bootstrap Modules -->
 <script src="app/common/bootstrap/bootstrap.dialog.js"></script>
